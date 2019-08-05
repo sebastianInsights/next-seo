@@ -433,7 +433,7 @@ const buildTags = (config: BuildTagsParams) => {
         );
         tagsToRender.push(
           <meta
-            key={`og:image:0${index}`}
+            key={`og:image:secure_url0${index}`}
             property="og:image:secure_url"
             content={image.url}
           />,
