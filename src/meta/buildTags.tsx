@@ -431,6 +431,13 @@ const buildTags = (config: BuildTagsParams) => {
             content={image.url}
           />,
         );
+        tagsToRender.push(
+          <meta
+            key={`og:image:0${index}`}
+            property="og:image:secure_url"
+            content={image.url}
+          />,
+        );
 
         if (image.alt) {
           tagsToRender.push(
